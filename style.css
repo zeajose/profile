@@ -1,0 +1,131 @@
+/* import your styles here */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:200" rel="stylesheet");
+
+/* general styles */
+
+body {
+/*  background-image: url(images/gradient.jpg);*/
+  background-color: #e6eef2;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  color: #f09c67
+}
+
+h2 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  color: #f09c67;
+}
+
+p {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #87c0cd;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-color:#4c8492;
+  color: white;
+  padding: 8px 16px;
+}
+
+/* cards */
+
+.container {
+  width: 700px;   /* This sets the width */
+  margin: 40px auto; /* This automatically sets left/right margins */
+}
+.card-white {
+  background: white;
+  padding: 32px;
+  margin: 80px auto;
+  text-align: center;
+  box-shadow: 2px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.small-card-white {
+  background: white;
+  padding: 32px;
+  margin: 80px auto;
+  text-align: center;
+  box-shadow: 2px 3px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: 1s;
+}
+.small-card-white:hover {
+  box-shadow: 2px 3px 15px rgba(0,0,0,0.5);
+}
+
+/* buttons */
+
+.btn-blue {
+  text-decoration: none;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-color:#87c0cd;
+  color: white;
+  padding: 8px 16px;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+
+.btn-blue:hover {
+  background-color:#f09c67;
+  border-radius: 20px;
+}
+
+/* profile image */
+
+#profile-rounded {
+  width: 300px;
+}
+
+/* lists */
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  /*selecting all the li element inside the class list-inline*/
+  display: inline-block;
+}
+
+/* social icons */
+.icon-gray {
+  background: none;
+  color: #87c0cd;
+  font-size: 25px;
+  transition: 0.2s;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.icon-gray:hover {
+ /* color: #9eeae2;*/
+ color: #f09c67;
+  border-radius: 30%;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
